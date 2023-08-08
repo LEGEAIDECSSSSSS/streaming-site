@@ -1,0 +1,138 @@
+homepage1.css
+/* Reset default margins and paddings */
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: rgba(201, 22, 22, 1);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(201, 22, 22, 0.781);
+}
+
+a:hover {
+  color: gray;
+}
+
+/* Header */
+header {
+  background-color: rgba(201, 22, 22, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  transition: transform 2s;
+}
+
+.logo:hover img {
+  transform: rotate(360deg);
+}
+
+/* Navigation */
+.site-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav li {
+  margin: 0 10px;
+}
+
+.site-nav a {
+  color: rgba(201, 22, 22, 0.781);
+  padding: 5px 10px;
+  border-radius: 30px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.site-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.63);
+  color: black;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.s-list {
+  flex-basis: calc(50% - 20px);
+  padding: 20px;
+  margin: 0 0 20px 0;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.s-list a {
+  color: white;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.s-list a:hover {
+  color: gray;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  padding: 10px 0;
+  width: 100%;
+  border-top: 2px solid gray;
+  text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .site-nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .site-nav li {
+    margin: 5px 0;
+  }
+  
+  .logo img {
+    width: 70px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .site-nav ul {
+    justify-content: center;
+  }
+
+  .site-nav li {
+    margin: 10px;
+  }
+}
+
+/* Add more media queries as needed */
+
+/* Add other styles as necessary */
+
+/* Avoid repetitive and unused styles */

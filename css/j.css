@@ -1,0 +1,36 @@
+html {
+    padding: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+}
+
+html h3 {
+    color: rgb(137, 135, 235);
+}
+
+html li {
+    margin-left: -24px;
+}
+
+.container {
+    display: flex;
+}
+
+.main {
+    flex: 3;
+    
+}
+
+.side {
+    flex: 1.5;
+    margin-left: 10px;
+}
+
+.contact {
+    margin-bottom: 98px;
+    font-size: x-small;
+}
+
+.skill {
+    margin-bottom: 35px;
+}
