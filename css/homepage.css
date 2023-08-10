@@ -256,10 +256,15 @@ input[type=password]:hover {
 }
 h6{
     text-align: center;
-    color: gray;
+    
 }
+
+h6 a{
+    color: white;
+}
+
 h6:hover {
-    background-color: white;
+    background-color: gray;
 }
 h6 a:hover {
     background-color: gray;
