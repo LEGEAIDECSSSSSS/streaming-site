@@ -263,6 +263,9 @@ h6 a{
     color: white;
 }
 
+.red{
+    color: white;
+}
 h6:hover {
     background-color: gray;
 }
