@@ -50,9 +50,6 @@ footer{
     color: gray;
 }
 
-.red {
-    color: gray;
-}
 
 .s-list{
     padding: 20px;
@@ -259,9 +256,10 @@ input[type=password]:hover {
 }
 h6{
     text-align: center;
+    color: gray;
 }
 h6:hover {
-    background-color: gray;
+    background-color: white;
 }
 h6 a:hover {
     background-color: gray;
