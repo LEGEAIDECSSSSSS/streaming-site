@@ -94,7 +94,7 @@ body a {
   .group li a{
     border: 1px solid white;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
   }
   
   /* Style for the "Log Out" and "Register" links */
@@ -107,7 +107,7 @@ body a {
     margin-left: 10px;
     border: 1px solid white;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
   }
   
   /* Add space between "Register" and "Log Out" */
