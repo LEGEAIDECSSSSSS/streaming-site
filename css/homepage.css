@@ -22,10 +22,11 @@ head{
 
 header{
     background-color: #333;
+    border-radius: 20px;
 }
 
 .logo img{
-    transition-propertyj: all;
+    transition-property: all;
     transition-duration: 2s;
 }
 
@@ -54,7 +55,7 @@ footer{
 
 .s-list{
     padding: 20px;
-   
+    border-radius: 20px;
     box-sizing: border-box;
     background-color: gray;
     width: 49%;
