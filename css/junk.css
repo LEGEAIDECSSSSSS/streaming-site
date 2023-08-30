@@ -1,0 +1,52 @@
+
+    .site-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+
+    }
+
+    .site-nav ul {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .site-nav li {
+        float: none;
+      margin: 5px 0;
+      left: 0;
+      text-align: left;
+    }
+  
+    .site-nav a {
+      padding: 10px 0;
+    }
+  }
+  
+  /* Tablet-sized screens */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .site-nav ul {
+      justify-content: center;
+    }
+  
+    .site-nav li {
+      margin: 10px; /* Increase the margin for better spacing */
+    }
+  }
+
+
+
+
+
+
+  .site-nav li {
+    margin: 3px 0;
+    width: 100%;
+  }
+
+  .site-nav li a{
+      width: 50%;
+  }

@@ -11,9 +11,6 @@ html a {
     text-decoration: none;
 }
 
-html a:hover {
-    color: gray;
-}
 
 head{
     height: 136px;
@@ -41,6 +38,7 @@ footer{
     text-align: center;
 }
 .container{
+    margin-top: 20px;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -63,8 +61,11 @@ footer{
 
 .s-list:nth-child(1){background-color: gray;}
 .s-list:nth-child(2){background-color: gray;}
+.s-list:nth-child(1) a:hover{
+    color: white;
+}
 .s-list:nth-child(2) a:hover{
-    color: gray;
+    color: white;
 }
 
 body a {
@@ -84,30 +85,63 @@ body a {
   .group {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
   }
   
   .group li {
-    margin-right: 20px;
+    margin-right: 40px;
+    margin-left: 5px;
+    transition: all;
+    box-sizing: border-box;
+   
   }
 
   .group li a{
     border: 1px solid white;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 40px;
+    padding: 9px 20px;
+    background-color: white;
+    box-sizing: border-box;
+    width: 50%;
   }
-  
+  @media screen and (max-width ) {
+    
+  }
+  /* site nav hover */
+  .group li :hover{
+    background-color: gray;
+    border: 1px solid #333;
+    transition-duration: 1s;
+  }
+
+  .group li a:hover{
+    color: white;
+    
+    transition-duration: 1s;
+  }
+
   /* Style for the "Log Out" and "Register" links */
   .out {
     display: flex;
     align-items: center;
+    transition: all;
   }
   
   .out a {
     margin-left: 10px;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 15px 0px;
     padding: 10px;
+    background-color: white;
+  }
+
+  .out a:hover{
+    color: white;
+    transition-duration: 1s;
+  }
+  .out :hover{
+    background-color: gray;
   }
   
   /* Add space between "Register" and "Log Out" */
@@ -127,7 +161,7 @@ body a {
   }
   
 .name{
-    font-size: 500%;
+    font-size: 200%;
     font-style: italic;
     text-align: center;
     text-shadow: 2px 3px 2px white;
@@ -436,35 +470,10 @@ img{
     .logo img {
       width: 50%; /* Adjust logo size for smaller screens */
     }
+}
   
     /* Adjust navigation layout */
-    .site-nav ul {
-      flex-direction: column;
-      text-align: center;
-      padding: 10px 0;
-    }
-  
-    .site-nav li {
-        float: none;
-      margin: 5px 0;
-      left: 0;
-    }
-  
-    .site-nav a {
-      padding: 10px 0;
-    }
-  }
-  
-  /* Tablet-sized screens */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .site-nav ul {
-      justify-content: center;
-    }
-  
-    .site-nav li {
-      margin: 10px; /* Increase the margin for better spacing */
-    }
-  }
+
   
   /* Very small screens (e.g., smartphones in portrait mode) */
   @media screen and (max-width: 480px) {
@@ -472,9 +481,7 @@ img{
       width: 80%; /* Further adjust logo size for very small screens */
     }
   
-    .site-nav li {
-      margin: 3px 0;
-    }
+   
   
     /* Adjust footer layout */
     footer {
