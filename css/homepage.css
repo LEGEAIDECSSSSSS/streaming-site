@@ -20,6 +20,7 @@ head{
 header{
     background-color: #333;
     border-radius: 20px;
+    width: auto;
 }
 
 .logo img{
@@ -347,10 +348,11 @@ h6 a:hover {
     top:40%;
     background-color:rgba(0, 0, 0, .3);
     padding: 1px 10px;
+    box-sizing: border-box;
     display: block;
     cursor: pointer;
     z-index: 9999;
-    right: 1080px;
+    left: 223px;
     opacity: 0;
     transition: opacity .5s;
 
