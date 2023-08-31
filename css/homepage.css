@@ -319,6 +319,15 @@ h6 a:hover {
     height: 400px;
 }
 
+.hm3{
+    width: 250px;
+    height: 350px;
+    margin-top: 10px;
+    border-radius: 20px;
+    margin-left: auto;
+   
+}
+
 @media screen and (max-width:700px) {
 .hm1,
 .hm2{
