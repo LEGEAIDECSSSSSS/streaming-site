@@ -294,10 +294,21 @@ h6 a:hover {
 
 .hm1,
 .hm2{
+    margin-left: 500px;
+    margin-top: 10px;
+    width: 350px;
+    height: 400px;
+}
+
+@media screen and (max-width:700px) {
+.hm1,
+.hm2{
     width: 250px;
     height: 317px;
     margin-top: 10px;
     border-radius: 10px;
+    margin-left: auto;
+   }
 }
 
 .slide{
@@ -311,8 +322,9 @@ h6 a:hover {
 
 .slide-text{
     position: absolute;
+    left: 500px;
     bottom: 0;
-    width: 250px;
+    width: 350px;
     padding: 5px 10px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, .8);
@@ -322,7 +334,35 @@ h6 a:hover {
     
 }
 
+@media screen and (max-width:700px) {
+    .slide-text{
+    position: absolute;
+    left: auto;
+    bottom: 0;
+    width: 250px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .8);
+    font-style: italic;
+    opacity: 0.3;
+    transition: all;
+    }
+}
+
+
 .slide-text:hover{
+    position: absolute;
+    bottom: 0;
+    width: 350px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 1;
+    transition-duration: .5s;
+}
+
+@media screen and (max-width:700px) {
+    .slide-text:hover{
     position: absolute;
     bottom: 0;
     width: 250px;
@@ -331,17 +371,19 @@ h6 a:hover {
     background-color: rgba(0, 0, 0, .8);
     opacity: 1;
     transition-duration: .5s;
+    }
 }
 
 .cycle-prev{
     position: absolute;
     top:40%;
+    left: 500px;
     background-color:rgba(0, 0, 0, .3);
     padding: 1px 10px;
     display: block;
     cursor: pointer;
     z-index: 9999;
-    opacity: 0;
+    opacity: 1;
     transition: opacity .5s;
     
 }
@@ -349,23 +391,54 @@ h6 a:hover {
 .cycle-next{
     position: absolute;
     top:40%;
+    left: 823px;
     background-color:rgba(0, 0, 0, .3);
+    width: 27px;
+    padding: 1px 10px;
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity .5s;
+
+}
+
+@media screen and (max-width:700px) {
+    .cycle-prev{
+        left: 0;
+        position: absolute;
+        top:40%;
+        background-color:rgba(0, 0, 0, .3);
+        padding: 1px 10px;
+        display: block;
+        cursor: pointer;
+        z-index: 9999;
+        opacity: 1;
+        transition: opacity .5s;
+        
+    }
+}
+
+@media screen and (max-width:700px) {
+    .cycle-next{
+    position: absolute;
+    top:40%;
+    background-color:rgba(0, 0, 0, .3);
+    width: 27px;
     padding: 1px 10px;
     box-sizing: border-box;
     display: block;
     cursor: pointer;
     z-index: 9999;
     left: 223px;
-    opacity: 0;
+    opacity: 1;
     transition: opacity .5s;
 
-}
-
-@media screen and (max-width:1000px) {
-    .cycle-next{
-        right: 50px;
     }
 }
+
+
 .cycle-slideshow:hover .cycle-prev,
 .cycle-slideshow:hover .cycle-next {
     opacity: 1;
@@ -422,10 +495,10 @@ h6 a:hover {
 
 }
 
-img{
+/*img{
     max-width: 100%;
     height: auto;
-}
+*/
 
 .fun-img:hover img{
     opacity: .6;
