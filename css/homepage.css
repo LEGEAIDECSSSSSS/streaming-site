@@ -558,7 +558,7 @@ h6 a:hover {
 .fun-img img:hover{
     opacity: 1;
     transform: scale(1) rotate(5deg);
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgba(201, 22, 22, 0.781);
 
 }
 
