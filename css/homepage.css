@@ -323,7 +323,9 @@ h6 a:hover {
     50%{
         transform: scale(.5);
     }
-    
+    75%{
+        transform: scale(1.5);
+    }
 }
 
 .cjheader{
