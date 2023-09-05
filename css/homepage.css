@@ -319,6 +319,18 @@ h6 a:hover {
     }
 }
 
+@keyframes headeranimation {
+    50%{
+        transform: scale(.5);
+    }
+    
+}
+
+.cjheader{
+    animation: headeranimation 2s;
+    animation-iteration-count: infinite;
+}
+
 .cjspin{
     animation:slidespin 2s;
     animation-fill-mode: forwards;
