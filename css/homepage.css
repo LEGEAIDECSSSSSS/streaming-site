@@ -86,6 +86,7 @@ body a {
   }
   
   .group li {
+    animation: drop 2s;
     margin-right: 40px;
     margin-left: 5px;
     transition: all;
@@ -332,6 +333,19 @@ h6 a:hover {
     animation: headeranimation 2s;
     animation-iteration-count: infinite;
 }
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
 
 .cjspin{
     animation:slidespin 2s;
