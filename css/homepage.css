@@ -12,7 +12,8 @@ html a {
 }
 
 @media screen and (max-width:700px) {
-    html p {
+    html p,
+    html a {
       font-size: small;
     }
 }
