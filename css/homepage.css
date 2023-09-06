@@ -94,8 +94,47 @@ body a {
   }
 
   .nav-drop {
-   animation: drop 1s; 
+   animation: drop 1s;
+   opacity: 0; 
+   animation-fill-mode: forwards;
 }
+
+  .nav-drop2 {
+    animation: drop 1s;
+    animation-delay: .5s;
+    opacity: 0; 
+    animation-fill-mode: forwards;
+  }
+  .nav-drop3 {
+    animation: drop 1s;
+    animation-delay: 1s;
+    opacity: 0; 
+    animation-fill-mode: forwards;
+  }
+ .nav-drop4 {
+    animation: drop 1s;
+    animation-delay: 1.5s;
+    opacity: 0; 
+    animation-fill-mode: forwards;
+  }
+ .nav-drop5 {
+    animation: drop 1s;
+    animation-delay: 2s;
+    opacity: 0; 
+    animation-fill-mode: forwards;
+  }
+  .nav-drop6 {
+    animation: drop 1s;
+    animation-delay: 2.5s;
+    opacity: 0; 
+    animation-fill-mode: forwards;
+  }
+  .nav-drop7 {
+    animation: drop 1s;
+    animation-delay: 3s;
+    opacity: 0; 
+    animation-fill-mode: forwards;
+  }
 
   .group li a{
     border: 1px solid white;
@@ -342,6 +381,27 @@ h6 a:hover {
         opacity: 0;
         transform: translateY(-200%);
     }
+
+    40%{
+        opacity: 0;
+        transform: translateY(0)
+    }
+
+    60%{
+        opacity: 1;
+        transform: translateY(6px);
+    }
+
+    70%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    80%{
+        opacity: 1;
+        transform: translateY(3px);
+    }
+    
+        
     100%{
         opacity: 1;
         transform: translateY(0);
