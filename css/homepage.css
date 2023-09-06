@@ -86,13 +86,16 @@ body a {
   }
   
   .group li {
-    animation: drop 2s;
     margin-right: 40px;
     margin-left: 5px;
     transition: all;
     box-sizing: border-box;
    
   }
+
+  .nav-drop {
+   animation: drop 1s; 
+}
 
   .group li a{
     border: 1px solid white;
