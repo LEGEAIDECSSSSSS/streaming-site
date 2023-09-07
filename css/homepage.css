@@ -66,8 +66,8 @@ footer{
     width: 49%;
 } 
 
-.s-list:nth-child(1){background-color: rgba(128, 128, 128, 0.7);}
-.s-list:nth-child(2){background-color: rgba(128, 128, 128, 0.7);}
+.s-list:nth-child(1){background-color: rgba(128, 128, 128, 0.85);}
+.s-list:nth-child(2){background-color: rgba(128, 128, 128, 0.85);}
 .s-list:nth-child(1) a:hover{
     color: white;
 }
@@ -733,7 +733,7 @@ h6 a:hover {
   }
 
   html{
-    background-image: url("../images/the-cw-dc-crossover-1005986.jpg");
+    background-image: url("../images/stretched-1366-768-615221.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
