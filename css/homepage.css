@@ -43,6 +43,7 @@ footer{
     width: 100%;
     border-top:2px solid gray   ;
     text-align: center;
+    position: absolute;
 }
 .container{
     margin-top: 80px;
@@ -264,8 +265,11 @@ body a {
 form {
 background-color: rgba(127, 129, 255, 0.13);
 padding: 30px 40px;
-width:40%;
+width:50%;
 box-sizing: border-box;
+position: relative;
+top: 25%;
+left: 25%;
 }
 
 .hidden-label{
@@ -733,9 +737,14 @@ h6 a:hover {
     }
   }
 
-  html{
+  .main-page{
     background-image: url("../images/stretched-1366-768-615221.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
   
+  .background{
+    background-image: url("../images/login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
